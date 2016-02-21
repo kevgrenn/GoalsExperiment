@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AuG-FH-1yu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--This Year-->
+        <scene sceneID="kkB-c6-I8D">
+            <objects>
+                <viewController title="This year" id="zhy-iQ-btd" userLabel="This Year" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Sr-pR-MEM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="This year" image="messages_tab" id="g3x-oU-rwo" userLabel="This year"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d11-EP-Kfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="1441"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="DNe-op-1RK">
+            <objects>
+                <viewController title="Today" id="33R-fl-fvy" userLabel="Today" customClass="TodayViewController" customModule="Goals2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i4Y-vn-Zcy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qnT-gD-SUz">
+                                <rect key="frame" x="50" y="20" width="106" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Fud-xE-2Oo">
+                                <rect key="frame" x="0.0" y="70" width="320" height="449"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What are you doing today?" textAlignment="natural" minimumFontSize="18" id="8Di-4w-UdB">
+                                        <rect key="frame" x="50" y="0.0" width="250" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Today" image="feed_tab" id="D43-fM-8ke" userLabel="Today"/>
+                    <connections>
+                        <outlet property="textField" destination="8Di-4w-UdB" id="pKo-9h-H9z"/>
+                        <outlet property="todayScroll" destination="Fud-xE-2Oo" id="iff-a0-9pM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppm-UA-cEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="813"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Jhg-q1-be2">
+            <objects>
+                <tabBarController id="AuG-FH-1yu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OaS-c9-ciH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="33R-fl-fvy" kind="relationship" relationship="viewControllers" id="gHc-a1-otK"/>
+                        <segue destination="zhy-iQ-btd" kind="relationship" relationship="viewControllers" id="J1k-mz-g57"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOB-jG-REc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="1127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="feed_tab" width="27" height="27"/>
+        <image name="messages_tab" width="27" height="27"/>
+    </resources>
+</document>
