@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DE88504668015D8DCE64C2381EBF073C852E0901",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DE88504668015D8DCE64C2381EBF073C852E0901" : 0,
+    "03D29E883DDC6B6BE3423408386B011AABABC8B2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6C6BD7F7-EB39-480C-9B20-5D053A1C8DE3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DE88504668015D8DCE64C2381EBF073C852E0901" : "GoalsExperiment\/",
+    "03D29E883DDC6B6BE3423408386B011AABABC8B2" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Goals2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Goals2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/milesalex\/goals.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03D29E883DDC6B6BE3423408386B011AABABC8B2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kevgrenn\/GoalsExperiment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DE88504668015D8DCE64C2381EBF073C852E0901"
+    }
+  ]
+}
